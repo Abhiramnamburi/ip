@@ -1,0 +1,17 @@
+<?php
+
+// Define the number of rows (adjust for desired triangle size)
+$rows = 5;
+
+for ($i = 0; $i < $rows; $i++) {
+  // Loop for each character in the row (from A to the current row number)
+  for ($j = 0; $j <= $i; $j++) {
+    // Get the character (ASCII value of 'A' + current loop counter)
+    $char = chr(65 + $j);
+    echo $char . " ";
+  }
+  // Move to the next line after each row
+  echo "<br>";
+}
+
+?>
